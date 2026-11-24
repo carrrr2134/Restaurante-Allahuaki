@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasta allaHuaki - Alta Gastronomía</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header y Navbar fija -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="#inicio" class="logo" data-tab="inicio">
+        <i class="fa-solid fa-utensils"></i>
+        <span>Pasta allaHuaki<span>.</span></span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#inicio" class="nav-link active" data-tab="inicio">Inicio</a></li>
+        <li class="nav-item"><a href="#lugar" class="nav-link" data-tab="lugar">El Lugar</a></li>
+        <li class="nav-item"><a href="#menu" class="nav-link" data-tab="menu">Menú</a></li>
+        <li class="nav-item"><a href="#reservas" class="nav-link" data-tab="reservas">Reservas</a></li>
+        <li class="nav-item"><a href="#contacto" class="nav-link" data-tab="contacto">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#reservas" class="btn-reservation" data-tab="reservas">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Reservar Mesa</span>
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-content">
+
+    <!-- ==================== PESTAÑA 1: INICIO ==================== -->
+    <section class="vista-pestana activa" id="vista-inicio">
+      <div class="hero-inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-contenido">
+          <span class="estrellas">★ ★ ★ ★ ★</span>
+          <span class="hero-etiqueta">ALTA COCINA ITALIANA CONTEMPORÁNEA</span>
+          <h1>Pasta allaHuaki</h1>
+          <p class="hero-descripcion">
+            Un santuario gastronómico donde la tradición artesanal del norte de Italia se fusiona con los ingredientes más exclusivos y codiciados del mundo. Cada plato es una pieza de autor amasada al momento y servida en una atmósfera íntima de elegancia atemporal.
+          </p>
+          <div class="hero-botones">
+            <button type="button" class="btn-primario" data-tab="reservas">Reservar Mesa</button>
+            <button type="button" class="btn-secundario" data-tab="menu">Explorar la Carta</button>
+          </div>
+
+          <div class="hero-destacados">
+            <div class="mini-destacado">
+              <i class="fa-solid fa-crown"></i>
+              <span>Ingredientes de Reserva Privada</span>
+            </div>
+            <div class="mini-destacado">
+              <i class="fa-solid fa-wine-glass"></i>
+              <span>Cava de Añadas Históricas</span>
+            </div>
+            <div class="mini-destacado">
+              <i class="fa-solid fa-bell-concierge"></i>
+              <span>Atención Personalizada</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PESTAÑA 2: EL LUGAR ==================== -->
+    <section class="vista-pestana" id="vista-lugar">
+      <div class="seccion-lugar">
+        <div class="encabezado">
+          <span class="estrellas">✦ ✦ ✦</span>
+          <h2>El Santuario</h2>
+          <p class="subtitulo">Arquitectura íntima, taller artesanal y cava privada</p>
+        </div>
+
+        <div class="contenedor-lugar">
+          <div class="lugar-texto">
+            <span class="categoria">NUESTRA ESENCIA</span>
+            <h3>El Arte de la Pasta Elevado a la Alta Cocina</h3>
+            <p>
+              Nacido de la obsesión por la perfección técnica y el respeto absoluto por la materia prima, <strong>Pasta allaHuaki</strong> redefine la experiencia gastronómica de lujo. Nuestro taller de pasta acristalado permite a los comensales observar cómo cada lámina, ravioli y tagliolini cobra vida minutos antes de llegar a la mesa.
+            </p>
+            <p>
+              Con capacidad limitada a nuestro salón principal, terraza VIP y cava privada, el espacio combina mármol Nero Marquina, madera noble envejecida e iluminación cálida diseñada para resaltar los aromas de la trufa blanca de Alba, el azafrán puro y nuestras reducciones cocidas durante más de doce horas.
+            </p>
+
+            <div class="lugar-datos">
+              <div class="dato-item">
+                <span class="dato-numero">100%</span>
+                <span class="dato-label">Amasado artesanal al momento</span>
+              </div>
+              <div class="dato-item">
+                <span class="dato-numero">+240</span>
+                <span class="dato-label">Etiquetas de colección</span>
+              </div>
+              <div class="dato-item">
+                <span class="dato-numero">3</span>
+                <span class="dato-label">Ambientes exclusivos</span>
+              </div>
+            </div>
+
+            <div class="lugar-acciones">
+              <button type="button" class="btn-primario" data-tab="reservas">Elegir Mesa en el Plano</button>
+              <button type="button" class="btn-secundario" data-tab="menu">Ver Carta y Precios</button>
+            </div>
+          </div>
+
+          <div class="lugar-galeria-visual">
+            <div class="img-principal-lugar">
+              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=80" alt="Salón elegante de Pasta allaHuaki">
+            </div>
+            <div class="tarjeta-flotante-lugar">
+              <i class="fa-solid fa-wine-glass-empty"></i>
+              <div>
+                <h4>Cava & Maridaje Imperial</h4>
+                <p>Selección curada de Barolos Monfortino, Brunellos Riserva y champagnes de añada.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pilares-grid">
+          <div class="pilar-card">
+            <i class="fa-solid fa-wheat-awn"></i>
+            <h3>Harinas de Herencia</h3>
+            <p>Sémola molida a la piedra y yemas orgánicas de pastoreo seleccionadas para una textura sedosa y al dente inigualable.</p>
+          </div>
+          <div class="pilar-card">
+            <i class="fa-solid fa-gem"></i>
+            <h3>Ingredientes de Subasta</h3>
+            <p>Trufa blanca de Alba en temporada, Wagyu A5 certificado de Kobe, caviar Beluga Imperial y langosta azul.</p>
+          </div>
+          <div class="pilar-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cocción Frente al Comensal</h3>
+            <p>Sin atajos ni pre-cocciones. Varias de nuestras creaciones se terminan y laminan directamente en su mesa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PESTAÑA 3: MENÚ ==================== -->
+    <section class="vista-pestana" id="vista-menu">
+      <div class="seccion-menu">
+        <div class="encabezado">
+          <span class="estrellas">✦ ✦ ✦</span>
+          <h2>Nuestra Carta</h2>
+          <p class="subtitulo">Creaciones artesanales elaboradas al momento — Valores expresados en USD</p>
+        </div>
+
+        <!-- Filtros del menú -->
+        <nav class="navegacion-menu" aria-label="Navegación de la carta">
+          <ul>
+            <li><a href="#" class="activo" data-filtro="todos">Carta Completa (12)</a></li>
+            <li><a href="#" data-filtro="trufa">Trufas & Selección Imperial</a></li>
+            <li><a href="#" data-filtro="mar">Frutti di Mare</a></li>
+            <li><a href="#" data-filtro="rellenas">Pastas Rellenas & Carnes</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contenedor principal con las 12 tarjetas de pasta de lujo -->
+        <div class="galeria-restaurante">
+
+          <div class="tarjeta-comida" data-categoria="trufa">
+            <div class="contenedor-img">
+              <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80" alt="Tagliolini con Trufa Negra">
+            </div>
+            <div class="info-platillo">
+              <div>
+                <span class="categoria">ESPECIALIDAD DE ALBA</span>
+                <h3>Tagliolini al Tartufo Nero</h3>
+                <p>Pasta fresca hecha a mano con emulsión de mantequilla clarificada y láminas generosas de trufa negra fresca.</p>
+              </div>
+              <div class="precio-bloque">
+                <span class="precio-etiqueta">PORCIÓN DE AUTOR</span>
+                <span class="precio-platillo">$165 USD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjeta-comida" data-categoria="mar">
+            <div class="contenedor-img">
+              <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80" alt="Linguine con Langosta Royale">
+            </div>
+            <div class="info-platillo">
+              <div>
+                <span class="categoria">FRUTTI DI MARE</span>
+                <h3>Linguine all'Astice Royale</h3>
+                <p>Linguine en tinta de calamar servidos con carne de langosta azul, tomates confitados y bisque de marisco.</p>
+              </div>
+              <div class="precio-bloque">
+                <span class="precio-etiqueta">LANGOSTA AZUL ENTERA</span>
+                <span class="precio-platillo">$240 USD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjeta-comida" data-categoria="rellenas">
+            <div class="contenedor-img">
+              <img src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/EBD4E797-1AE6-4ED3-967C-B36F83B2F37A/Derivates/05CB7D8E-979E-464E-AF25-CCF6FED71A16.jpg" alt="Ravioli de Foie Gras y Parmigiano">
+            </div>
+            <div class="info-platillo">
+              <div>
+                <span class="categoria">PASTA RIPIENA</span>
+                <h3>Ravioli di Foie Gras</h3>
+                <p>Rellenos de foie gras y pavo salvaje, acompañados de crema de Parmigiano Reggiano curado 36 meses.</p>
+              </div>
+              <div class="precio-bloque">
+                <span class="precio-etiqueta">SELECCIÓN RESERVA</span>
+                <span class="precio-platillo">$185 USD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjeta-comida" data-categoria="rellenas">
+            <div class="contenedor-img">
+              <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80" alt="Pappardelle al Ragù de Wagyu">
+            </div>
+            <div class="info-platillo">
+              <div>
+                <span class="categoria">TRADICIONAL REFINADO</span>
+                <h3>Pappardelle al Ragù di Wagyu</h3>
+                <p>Cintas anchas bañadas en ragù estofado lentamente durante 12 horas elaborado con carne pura de Wagyu A5.</p>
+              </div>
+              <div class="precio-bloque">
+                <span class="precio-etiqueta">WAGYU A5 CERTIFICADO</span>
+                <span class="precio-platillo">$260 USD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjeta-comida" data-categoria="trufa">
+            <div class="contenedor-img">
+              <img src="https://images.unsplash.com/photo-1579684947550-22e945225d9a?auto=format&fit=crop&w=800&q=80" alt="Spaghetti al Caviar Beluga">
+            </div>
+            <div class="info-platillo">
+              <div>
+                <span class="categoria">SELECCIÓN IMPERIAL</span>
+                <h3>Spaghetti al Caviale Beluga</h3>
+                <p>Spaghetti artesanales salteados en salsa de chalota, vino blanco vintage y una generosa porción de caviar Beluga.</p>
+              </div>
+              <div class="precio-bloque">
+                <span class="precio-etiqueta">30G CAVIAR BELUGA</span>
+                <span class="precio-platillo">$380 USD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjeta-comida" data-categoria="mar">
+            <div class="contenedor-img">
+              <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&w=800&q=80" alt="Tortellini de Bogavante y Azafrán">
+            </div>
+            <div class="info-platillo">
+              <div>
+                <span class="categoria">ALTA GASTRONOMÍA</span>
+                <h3>Tortellini d'Oro &amp; Zafferano</h3>
+                <p>Tortellini elaborados con masa enriquecida con azafrán español y láminas de oro comestible de 24k, rellenos de bogavante.</p>
+              </div>
+              <div class="precio-bloque">
+                <span class="precio-etiqueta">ORO 24K & AZAFRÁN</span>
+                <span class="precio-platillo">$230 USD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjeta-comida" data-categoria="trufa">
+            <div class="contenedor-img">
+              <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=800&q=80" alt="Fettuccine Carbonara Imperial">
+            </div>
+            <div class="info-platillo">
+              <div>
+                <span class="categoria">CLÁSICO DE LUJO</span>
+                <h3>Fettuccine Carbonara Imperiale</h3>
+                <p>Con Guanciale crujiente de cerdo negro de Nebrodi, yema de huevo de granja ecológica y pimienta negra de Sarawak.</p>
+              </div>
+              <div class="precio-bloque">
+                <span class="precio-etiqueta">EDICIÓN NEBRODI</span>
+                <span class="precio-platillo">$145 USD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjeta-comida" data-categoria="trufa">
+            <div class="contenedor-img">
+              <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80" alt="Gnocchi de Patata con Trufa Blanca">
+            </div>
+            <div class="info-platillo">
+              <div>
+                <span class="categoria">PIEMONTE EDICIÓN</span>
+                <h3>Gnocchi al Tartufo Bianco</h3>
+                <p>Gnocchi artesanales de patata suave bañados en fondue de queso Fontina y finas láminas de trufa blanca de Alba.</p>
+              </div>
+              <div class="precio-bloque">
+                <span class="precio-etiqueta">TRUFA BLANCA DE ALBA</span>
+                <span class="precio-platillo">$320 USD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjeta-comida" data-categoria="rellenas">
+            <div class="contenedor-img">
+              <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_768,h_1024/https://www.italiankitchenconfessions.com/wp-content/uploads/2025/11/Barolo-Braised-Beef-Agnolotti-del-Plin-Piedmontese-Filled-Pasta_plate-1-768x1024.webp" alt="Agnolotti dal Plin con Solomillo">
+            </div>
+            <div class="info-platillo">
+              <div>
+                <span class="categoria">RECETA DE AUTOR</span>
+                <h3>Agnolotti al Barolo &amp; Filetto</h3>
+                <p>Pellizcos de pasta rellenos de solomillo madurado 60 días, glaseados con reducción de vino Barolo DOCG.</p>
+              </div>
+              <div class="precio-bloque">
+                <span class="precio-etiqueta">REDUCCIÓN BAROLO DOCG</span>
+                <span class="precio-platillo">$195 USD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjeta-comida" data-categoria="mar">
+            <div class="contenedor-img">
+              <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80" alt="Bucatini cacio e pepe con Erizo de Mar">
+            </div>
+            <div class="info-platillo">
+              <div>
+                <span class="categoria">CREACIÓN SIGNATURE</span>
+                <h3>Bucatini Cacio e Pepe con Riccio</h3>
+                <p>Emulsión cremosa de Pecorino Romano y pimienta recién molida, enriquecida con hueva fresca de erizo de mar.</p>
+              </div>
+              <div class="precio-bloque">
+                <span class="precio-etiqueta">ERIZO DEL MEDITERRÁNEO</span>
+                <span class="precio-platillo">$180 USD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjeta-comida" data-categoria="rellenas">
+            <div class="contenedor-img">
+              <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80" alt="Cannelloni de Pato y Piñones">
+            </div>
+            <div class="info-platillo">
+              <div>
+                <span class="categoria">SELECCIÓN GOURMET</span>
+                <h3>Cannelloni all'Anatra &amp; Pinoli</h3>
+                <p>Canelones rellenos de confit de pato confitado lentamente, piñones tostados y gratinado de bechamel trufada.</p>
+              </div>
+              <div class="precio-bloque">
+                <span class="precio-etiqueta">BECHAMEL TRUFADA</span>
+                <span class="precio-platillo">$170 USD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjeta-comida" data-categoria="mar">
+            <div class="contenedor-img">
+              <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&w=800&q=80" alt="Orecchiette al Pesto de Pistacho y Cangrejo">
+            </div>
+            <div class="info-platillo">
+              <div>
+                <span class="categoria">DELICATESSEN MARINA</span>
+                <h3>Orecchiette al Pistacchio e Granchio</h3>
+                <p>Pasta de Apulia acompañada de pesto de pistachos de Bronte DOP, carne fresca de cangrejo real y aceite de oliva virgen extra.</p>
+              </div>
+              <div class="precio-bloque">
+                <span class="precio-etiqueta">CANGREJO REAL & BRONTE</span>
+                <span class="precio-platillo">$210 USD</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PESTAÑA 4: RESERVAS (SISTEMA INTERACTIVO) ==================== -->
+    <section class="vista-pestana" id="vista-reservas">
+      <div class="seccion-reservas">
+        <div class="encabezado">
+          <span class="estrellas">✦ ✦ ✦</span>
+          <h2>Sistema de Reservas</h2>
+          <p class="subtitulo">Seleccione su ubicación en el plano del salón y asegure su velada</p>
+        </div>
+
+        <div class="reservas-toolbar">
+          <button type="button" id="btn-view-reservations" class="btn-outline-gold">
+            <i class="fa-solid fa-ticket"></i>
+            Reservas Activas <span id="reservation-count" class="badge">0</span>
+          </button>
+        </div>
+
+        <div class="reservas-container">
+          <!-- Panel izquierdo: Mapa interactivo del salón -->
+          <div class="floorplan-section">
+            <div class="section-header">
+              <div>
+                <h3>Plano del Salón</h3>
+                <p class="subtitle">Haz clic en cualquier mesa disponible para seleccionarla</p>
+              </div>
+              <div class="legend">
+                <div class="legend-item"><span class="dot available"></span> Disponible</div>
+                <div class="legend-item"><span class="dot selected"></span> Seleccionada</div>
+                <div class="legend-item"><span class="dot occupied"></span> Reservada</div>
+              </div>
+            </div>
+
+            <!-- Filtros de zona -->
+            <div class="filter-bar">
+              <button type="button" class="filter-btn active" data-zone="all">Todo el Salón</button>
+              <button type="button" class="filter-btn" data-zone="terraza">Terraza VIP</button>
+              <button type="button" class="filter-btn" data-zone="salon">Salón Principal</button>
+              <button type="button" class="filter-btn" data-zone="privado">Cava Privada</button>
+            </div>
+
+            <!-- Mapa visual de mesas -->
+            <div class="floorplan-canvas" id="tables-grid"></div>
+          </div>
+
+          <!-- Panel derecho: Formulario de reserva -->
+          <aside class="booking-section">
+            <div class="booking-card">
+              <div class="card-header">
+                <h3>Detalles de la Reserva</h3>
+                <span class="gold-line"></span>
+              </div>
+
+              <form id="booking-form">
+                <!-- Resumen de mesa elegida -->
+                <div class="selected-table-box" id="selected-table-display">
+                  <span class="placeholder-text">Selecciona una mesa en el plano</span>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="guests">Comensales</label>
+                    <select id="guests" required>
+                      <option value="1">1 Persona</option>
+                      <option value="2" selected>2 Personas</option>
+                      <option value="3">3 Personas</option>
+                      <option value="4">4 Personas</option>
+                      <option value="5">5 Personas</option>
+                      <option value="6">6 Personas</option>
+                      <option value="7">7 Personas</option>
+                      <option value="8">8 Personas</option>
+                      <option value="10">10 Personas (VIP)</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="date">Fecha</label>
+                    <input type="date" id="date" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Horario Disponible</label>
+                  <div class="time-slots" id="time-slots">
+                    <button type="button" class="time-btn" data-time="20:00">20:00</button>
+                    <button type="button" class="time-btn active" data-time="21:00">21:00</button>
+                    <button type="button" class="time-btn" data-time="22:00">22:00</button>
+                    <button type="button" class="time-btn" data-time="23:00">23:00</button>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="customer-name">Nombre Completo</label>
+                  <input type="text" id="customer-name" placeholder="Ej. Valentino Torrico" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="customer-phone">Teléfono de Contacto</label>
+                  <input type="tel" id="customer-phone" placeholder="Ej. +54 9 388 000-0000" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="notes">Preferencias o Celebración (Opcional)</label>
+                  <textarea id="notes" rows="2" placeholder="Aniversario, alergias, silla extra..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-gold" id="submit-btn" disabled>
+                  Confirmar Reserva
+                </button>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PESTAÑA 5: CONTACTO ==================== -->
+    <section class="vista-pestana" id="vista-contacto">
+      <div class="seccion-contacto">
+        <div class="encabezado">
+          <span class="estrellas">✦ ✦ ✦</span>
+          <h2>Contacto</h2>
+          <p class="subtitulo">Atención personalizada de nuestro equipo de Concierge y Relaciones Públicas</p>
+        </div>
+
+        <div class="caja-contacto">
+          <div class="contacto-info">
+            <span class="categoria">COMUNICACIÓN DIRECTA</span>
+            <h3>Estamos a su Disposición</h3>
+            <p>
+              Para consultas sobre eventos privados en nuestra cava subterránea, alergias alimentarias, prensa o solicitudes especiales, comuníquese directamente con nuestro equipo.
+            </p>
+
+            <ul class="datos-contacto-lista">
+              <li>
+                <div class="icono-contacto"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <strong>Dirección del Salón</strong>
+                  <span>Av. Libertador 2450, Distrito Gastronómico</span>
+                </div>
+              </li>
+              <li>
+                <div class="icono-contacto"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <strong>Línea Privada Concierge</strong>
+                  <span>+54 (11) 4800-9920 / WhatsApp VIP +54 9 11 5555-0192</span>
+                </div>
+              </li>
+              <li>
+                <div class="icono-contacto"><i class="fa-regular fa-envelope"></i></div>
+                <div>
+                  <strong>Correo Electrónico</strong>
+                  <span>concierge@pastaallahuaki.com</span>
+                </div>
+              </li>
+              <li>
+                <div class="icono-contacto"><i class="fa-regular fa-clock"></i></div>
+                <div>
+                  <strong>Horarios de Atención</strong>
+                  <span>Martes a Sábado: 20:00 — 00:30 hs | Domingos: 12:30 — 16:30 hs</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <form class="formulario-contacto" id="contact-form">
+            <h3>Envíenos un Mensaje</h3>
+            <div class="campo-grupo">
+              <input type="text" placeholder="Nombre y Apellido" required>
+              <input type="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="campo-grupo">
+              <input type="tel" placeholder="Teléfono / WhatsApp" required>
+              <select required>
+                <option value="" disabled selected>Motivo de consulta</option>
+                <option value="mesa">Consulta de Mesa / Velada</option>
+                <option value="privado">Evento Privado en Cava</option>
+                <option value="menu">Consultas sobre la Carta / Alergias</option>
+                <option value="prensa">Prensa & Alianzas</option>
+              </select>
+            </div>
+            <textarea rows="5" placeholder="Escriba su mensaje o requerimiento especial..." required></textarea>
+            <button type="submit" class="btn-primario btn-full">Enviar Consulta</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal de Confirmación / Ticket de Reserva -->
+  <div class="modal-overlay" id="ticket-modal">
+    <div class="modal-card">
+      <button type="button" class="close-modal" id="close-ticket">&times;</button>
+      <div class="ticket-header">
+        <span class="brand-icon">✦</span>
+        <h3>RESERVA CONFIRMADA</h3>
+        <p class="ticket-code" id="ticket-code">#HUA-0000</p>
+      </div>
+      <div class="ticket-divider"></div>
+      <div class="ticket-body" id="ticket-details"></div>
+      <div class="ticket-footer">
+        <p>Presenta este pase digital al llegar a recepción de Pasta allaHuaki.</p>
+        <button type="button" class="btn-gold" id="btn-new-booking">Listo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Lista de Reservas Activas -->
+  <div class="modal-overlay" id="list-modal">
+    <div class="modal-card modal-wide">
+      <button type="button" class="close-modal" id="close-list">&times;</button>
+      <div class="card-header">
+        <h3>Reservas Registradas</h3>
+        <span class="gold-line"></span>
+      </div>
+      <div id="reservations-list" class="reservations-list"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 Pasta allaHuaki — Experiencia Culinaria Exclusiva. Todos los derechos reservados.</p>
+
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=61592195333081" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/PastasAllaHuaki" target="_blank" aria-label="X (Twitter)">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="https://www.tiktok.com/@allahuaki.pastas?is_from_webapp=1&sender_device=pc" target="_blank" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
